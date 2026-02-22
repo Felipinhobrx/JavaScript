@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 10px;
+            margin: auto;
+            width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Teste Relacionamento</h1>
+        <input type="text" name="text1" id="text1"> +
+        <input type="text" name="text2" id="text2">
+        <input type="button" value="Somar" onclick="somar()">
+        <p id="res">Resultado: </p>
+    </div>
+
+    <script>
+        function somar() {
+            var text1 = document.getElementById('text1')
+            var text2 = document.getElementById('text2')
+            var res = document.getElementById('res')
+            var n1 = String(text1.value)
+            var n2 = String(text2.value)
+            res.innerText = `A soma entre ${n1} e ${n2} é igual a ❤️`
+        }
+    </script>
+</body>
+</html>
