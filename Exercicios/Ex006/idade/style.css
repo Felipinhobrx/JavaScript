@@ -19,17 +19,12 @@ section {
     padding: 10px;
 }
 
-#img {
-    margin: auto;
+#foto {
+    display: flex;
     width: 150px;
     height: 150px;
-    display: flex;
-}
-
-#img img {
-    border-radius: 40%;
-    background-size: cover;
-    
+    margin: auto;
+    border-radius: 50%;
 }
 
 footer {
