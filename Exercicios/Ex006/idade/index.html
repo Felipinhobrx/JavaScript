@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Detectador de Idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Digite seu nome:
+                <input type="text" name="nome" id="nome">
+            </p>
+
+            <p>
+                Digite sua idade:
+                <input type="number" name="idade" id="idade" required>
+            </p>
+
+            <p>Qual seu sexo:
+                <input type="radio" name="raH" id="raH" checked>
+                <label for="raH">Masculino</label>
+                <input type="radio" name="raM" id="raM">
+                <label for="raM">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" onclick="calcularIdade()">
+        </div>
+
+        <div id="img">
+            <img src="imagens/bb H.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <p>CursoEmVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
