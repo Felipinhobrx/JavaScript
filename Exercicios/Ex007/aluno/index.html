@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: #e0e0e0;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            text-shadow: 3px 3px 5px #727272;
+        }
+
+        section {
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: white;
+
+            margin: auto;
+            width: 500px;
+            height: 350px;
+            padding: 10px;
+        }
+
+        #res {
+            text-align: center;
+        }
+
+        #foto {
+            border-radius: 50%;
+
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+
+    <title>Detector de notas</title>
+</head>
+<body>
+    <h1>Detector de Notas</h1>
+    <section>
+        <p>
+            Digite seu nome: 
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            Digite sua idade: 
+            <input type="number" name="idade" id="idade">
+        </p>
+        <p>
+            Digite sua nota:
+            <input type="number" name="nota" id="nota">
+        </p>
+        <input type="button" value="Verificar" onclick="verificar()">
+
+        <div id="res">
+            
+        </div>
+    </section>
+
+    <script>
+
+        function verificar() {
+            var inputnome = document.getElementById('nome')
+            var inputidade = document.getElementById('idade')
+            var inputnota = document.getElementById('nota')
+
+            var nome = (inputnome.value)
+            var idade = (inputidade.value)
+            var nota = Number((inputnota.value))
+
+            var res = document.getElementById('res')
+            var img = document.createElement('img')
+            img.setAttribute('id', 'foto')
+            var passou = ''
+
+            if (nota < 18 && nota >= 0) {
+                passou = 'Reprovado'
+                img.setAttribute('src', 'sad.jpg')
+
+            } else if (nota >= 18 && nota <= 30) {
+                passou = 'Aprovado'
+                img.setAttribute('src', 'happy.jpg')
+            } else {
+                alert('[ERRO!!!] Verifique os dados e tente novamente.')
+            }
+
+            res.innerHTML = (`<p>O aluno(a) ${nome} de ${idade} anos foi ${passou}.</p>`)
+            res.appendChild(img)
+        }
+    </script>
+</body>
+</html>
