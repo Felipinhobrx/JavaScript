@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
+    <title>Tabuada</title>
     <style>
         body {
             background-color: lightblue;
@@ -26,29 +26,35 @@
     </style>
 </head>
 <body>
-    <h1>Vamos Contar</h1>
+    <h1>Tabuada</h1>
 
     <section>
         <p>
-            <label for="iinicio">Inicio: </label>
-            <input type="number" name="iinicio" id="iinicio">
+            <label for="inumber">Digite um número: </label>
+            <input type="number" name="inumber" id="inumber">
         </p>
 
-        <p>
-            <label for="ifim">Fim: </label>
-            <input type="number" name="ifim" id="ifim">
-        </p>
-
-        <p>
-            <label for="ipasso">Passo: </label>
-            <input type="number" name="ipasso" id="ipasso">
-        </p>
+        <input type="button" value="Executar" onclick="tabuada()">
 
         <div id="res">
             <p>Aqui aparecera o res!!!</p>
         </div>
     </section>
 
-    
+    <script>
+        function tabuada() {
+            var inumber = document.getElementById('inumber')
+            var res = document.getElementById('res')
+            var n = Number(inumber.value)
+            var c = 1
+            res.innerHTML = ('')
+
+            while (c <= 10) {
+                var m = n * c
+                res.innerHTML += `<p>${n} x ${c} = ${m}</p>`
+                c++
+            }
+        }
+    </script>
 </body>
 </html>
