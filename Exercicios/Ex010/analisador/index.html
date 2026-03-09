@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(124, 215, 245);
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            text-shadow: 3px 3px 5px gray;
+        }
+
+        section {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+
+            width: 450px;
+
+            margin: auto;
+            padding: 10px;
+        }
+
+        section select {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+
+    <title>Analisador de Números</title>
+</head>
+<body>
+    <h1>Analisador de Números</h1>
+
+    <section>
+        <div>
+            <p>
+                Digite um número entre [1 a 100]:
+                <input type="number" name="inum" id="inum">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+            </p>
+
+            <select name="flista" id="flista" size="6"></select>
+            <br>
+            <input type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+    
+        <div id="res">
+            
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
