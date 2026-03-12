@@ -8,8 +8,6 @@ var amigo = {nome: 'Felipe',
     }
 }
 
-engordar(2)
-
 /*
 console.log(amigo)
 console.log(amigo.nome)
