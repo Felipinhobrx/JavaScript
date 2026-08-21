@@ -2,9 +2,9 @@ let pessoa1 = {
     nome: 'Felipe',
     sobrenome: 'dos Santos Toledo',
     idade: 15,
-    increIdade() {
-        return this.idade += 1
+    increIdade(i) {
+        return this.idade += i
     }
 }
 
-console.log(pessoa1.increIdade())
+console.log(pessoa1.increIdade(2))

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sriracha&family=UnifrakturMaguntia&display=swap');
+
+:root {
+    --cor1: #067191;
+    --cor2: #083d4d;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: Open Sans;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+form input, form label, form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form input {
+    height: 50px;
+}
+
+form input:focus {
+    outline: 1px solid var(--cor1);
+}
+
+form button {
+    border: none;
+    background-color: var(--cor1);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    margin-top: 50px;
+}
+
+form button:hover {
+    background-color: var(--cor2);
+}
+
