@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste append child create element</title>
+    <title>Document</title>
     <style>
         body {
             background-color: rgb(0, 89, 95);
@@ -25,18 +25,20 @@
 </head>
 <body>
     <main id="container">
-        <h1>Append child, create element</h1>
-        <button onclick="criaImg()">Clique em mim</button>
+        <h1></h1>
+
+        <div class="paragrafos">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
     </main>
 
     <script>
-        const container = document.getElementById('container')
-
-        function criaImg() {
-            let img = document.createElement('img')
-            img.appendChild('img.jpg')
-            container.appendChild(img)
-        }
+        const paragrafos = document.querySelector('.paragrafos')
+        const p = paragrafos.querySelectorAll('p')
     </script>
 </body>
 </html>
