@@ -22,17 +22,21 @@
             margin-top: 150px;
             width: 500px;
         }
+
+        .pausado {
+            color: red;
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>Cronometro</h1>
 
-        <p class="timer">00:00:00</p>
+        <p class="relogio">00:00:00</p>
 
-        <button onclick="cronometro()">Iniciar</button>
-        <button>Pausar</button>
-        <button>Zerar</button>
+        <button id="iniciar">Iniciar</button>
+        <button id="pausar">Pausar</button>
+        <button id="zerar">Zerar</button>
     </main>
 
     <script src="script.js"></script>
